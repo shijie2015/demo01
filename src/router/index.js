@@ -149,13 +149,72 @@ export const constantRoutes = [
   },
 
   {
-    path: 'external-link',
-    component: Layout,
+    path: "/middleend",
+    component:Layout,
+    meta: { title: 'Middle End', icon: 'all' },
     children: [
       {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
-      }
+        path: 'trade-center',
+        name: 'TradeCenter',
+        meta: { title: 'Trade Center' },
+        children: [
+          {
+            path: 'deposit-transaction',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'DepositTransaction',
+            meta: { title: 'Deposit Transaction' }
+          },
+          {
+            path: 'loan-transaction',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'LoanTransaction',
+            meta: { title: 'Loan Transaction' }
+          },
+          {
+            path: 'financial-transaction',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'FinancialTransaction',
+            meta: { title: 'Financial transactions' }
+          },
+          {
+            path: 'consumption-transaction',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ConsumptionTransaction',
+            meta: { title: 'Consumption transactions' }
+          },
+        ]
+      },
+      {
+        path: 'payment-center',
+        name: 'PaymentCenter',
+        meta: { title: 'Payment Center' },
+        children: [
+          {
+            path: 'cash-payment',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'CashPayment',
+            meta: { title: 'Cash payment' }
+          },
+          {
+            path: 'balance-payment',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'BalancePayment',
+            meta: { title: 'Balance payment' }
+          },
+          {
+            path: 'red-envelope',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'RedEnvelope',
+            meta: { title: 'Red Envelope' }
+          },
+          {
+            path: 'integral-payment',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'IntegralPayment',
+            meta: { title: 'Integral Payment' }
+          },
+        ]
+      },
     ]
   },
 
