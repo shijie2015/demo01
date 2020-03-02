@@ -174,13 +174,13 @@ export const constantRoutes = [
             path: 'financial-transaction',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'FinancialTransaction',
-            meta: { title: 'Financial transactions' }
+            meta: { title: 'Financial Transactions' }
           },
           {
             path: 'consumption-transaction',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ConsumptionTransaction',
-            meta: { title: 'Consumption transactions' }
+            meta: { title: 'Consumption Transactions' }
           }
         ]
       },
@@ -193,13 +193,13 @@ export const constantRoutes = [
             path: 'cash-payment',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'CashPayment',
-            meta: { title: 'Cash payment' }
+            meta: { title: 'Cash Payment' }
           },
           {
             path: 'balance-payment',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'BalancePayment',
-            meta: { title: 'Balance payment' }
+            meta: { title: 'Balance Payment' }
           },
           {
             path: 'red-envelope',
@@ -249,7 +249,7 @@ export const constantRoutes = [
       {
         path: 'clearing-center',
         name: 'ClearingCenter',
-        meta: { title: 'Clearing center' },
+        meta: { title: 'Clearing Center' },
         children: [
           {
             path: 'reconciliation',
@@ -273,7 +273,7 @@ export const constantRoutes = [
             path: 'file-download',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'FileDownload',
-            meta: { title: 'File download' }
+            meta: { title: 'File Download' }
           },
           {
             path: 'result-download',
@@ -292,19 +292,19 @@ export const constantRoutes = [
             path: 'file-collection',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'FileCollection',
-            meta: { title: 'File collection' }
+            meta: { title: 'File Collection' }
           },
           {
             path: 'data-cleaning',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'DataCleaning',
-            meta: { title: 'Data cleaning' }
+            meta: { title: 'Data Cleaning' }
           },
           {
             path: 'file-store',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'FileStore',
-            meta: { title: 'File store' }
+            meta: { title: 'File Store' }
           },
           {
             path: 'search',
@@ -317,25 +317,25 @@ export const constantRoutes = [
       {
         path: 'configuration-center',
         name: 'ConfigurationCenter',
-        meta: { title: 'Configuration center' },
+        meta: { title: 'Configuration Center' },
         children: [
           {
             path: 'parameter-subscription',
             component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'Parameter subscription',
-            meta: { title: 'Parameter subscription' }
+            name: 'ParameterSubscription',
+            meta: { title: 'Parameter Subscription' }
           },
           {
             path: 'change-monitoring',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ChangeMonitoring',
-            meta: { title: 'Change monitoring' }
+            meta: { title: 'Change Monitoring' }
           },
           {
             path: 'parameter-loading',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ParameterLoading',
-            meta: { title: 'Parameter loading' }
+            meta: { title: 'Parameter Loading' }
           },
           {
             path: 'parameter-download',
@@ -347,13 +347,13 @@ export const constantRoutes = [
             path: 'flexible-notice-receiving',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'FlexibleNoticeReceiving',
-            meta: { title: 'Flexible notice receiving' }
+            meta: { title: 'Flexible Notice Receiving' }
           },
           {
             path: 'parameter-store',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ParameterStore',
-            meta: { title: 'Parameter store' }
+            meta: { title: 'Parameter Store' }
           }
         ]
       },
@@ -391,44 +391,13 @@ export const constantRoutes = [
       {
         path: 'account-center',
         name: 'AccountCenter',
-        meta: { title: 'Account center' },
+        meta: { title: 'Account Center' },
         children: [
           {
             path: 'electronic-account-opening',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ElectronicAccountOpening',
-            meta: { title: 'Electronic account opening' }
-          },
-          {
-            path: 'add-account',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'AddAccount',
-            meta: { title: 'Add Account' }
-          },
-          {
-            path: 'binding-card',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'BindingCard',
-            meta: { title: 'Binding Card' }
-          },
-          {
-            path: 'user-information-maintenance',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'UserInformationMaintenance',
-            meta: { title: 'User Information Maintenance' }
-          }
-        ]
-      },
-      {
-        path: 'account-center',
-        name: 'AccountCenter',
-        meta: { title: 'Account center' },
-        children: [
-          {
-            path: 'electronic-account-opening',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'ElectronicAccountOpening',
-            meta: { title: 'Electronic account opening' }
+            meta: { title: 'Electronic Account Opening' }
           },
           {
             path: 'add-account',
@@ -459,19 +428,19 @@ export const constantRoutes = [
             path: 'product-template',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ProductTemplate',
-            meta: { title: 'Product template' }
+            meta: { title: 'Product Template' }
           },
           {
             path: 'product-category',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ProductCategory',
-            meta: { title: 'Product category' }
+            meta: { title: 'Product Category' }
           },
           {
             path: 'product-configuration',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ProductConfiguration',
-            meta: { title: 'Product configuration' }
+            meta: { title: 'Product Configuration' }
           },
           {
             path: 'on-off-shelf',
@@ -576,7 +545,7 @@ export const constantRoutes = [
             path: 'message-serial-number',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'MessageSerialNumber',
-            meta: { title: 'Message serial number' }
+            meta: { title: 'Message Serial Number' }
           },
           {
             path: 'database-primary-key',
