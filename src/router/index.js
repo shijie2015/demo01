@@ -149,8 +149,8 @@ export const constantRoutes = [
   },
 
   {
-    path: "/middleend",
-    component:Layout,
+    path: '/middleend',
+    component: Layout,
     meta: { title: 'Middle End', icon: 'all' },
     children: [
       {
@@ -181,7 +181,7 @@ export const constantRoutes = [
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'ConsumptionTransaction',
             meta: { title: 'Consumption transactions' }
-          },
+          }
         ]
       },
       {
@@ -212,9 +212,392 @@ export const constantRoutes = [
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'IntegralPayment',
             meta: { title: 'Integral Payment' }
-          },
+          }
         ]
       },
+      {
+        path: 'marketing-center',
+        name: 'MarketingCenter',
+        meta: { title: 'Marketing Center' },
+        children: [
+          {
+            path: 'luck-draw',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'LuckDraw',
+            meta: { title: 'Luck Draw' }
+          },
+          {
+            path: 'seckill',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Seckill',
+            meta: { title: 'Seckill' }
+          },
+          {
+            path: 'preferential',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Preferential',
+            meta: { title: 'Preferential' }
+          },
+          {
+            path: 'off',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Off',
+            meta: { title: 'Off' }
+          }
+        ]
+      },
+      {
+        path: 'clearing-center',
+        name: 'ClearingCenter',
+        meta: { title: 'Clearing center' },
+        children: [
+          {
+            path: 'reconciliation',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Reconciliation',
+            meta: { title: 'Reconciliation' }
+          },
+          {
+            path: 'liquidation',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Liquidation',
+            meta: { title: 'Liquidation' }
+          },
+          {
+            path: 'preferential',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Preferential',
+            meta: { title: 'Preferential' }
+          },
+          {
+            path: 'file-download',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'FileDownload',
+            meta: { title: 'File download' }
+          },
+          {
+            path: 'result-download',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ResultDownload',
+            meta: { title: 'Result Download' }
+          }
+        ]
+      },
+      {
+        path: 'log-center',
+        name: 'LogCenter',
+        meta: { title: 'Log Center' },
+        children: [
+          {
+            path: 'file-collection',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'FileCollection',
+            meta: { title: 'File collection' }
+          },
+          {
+            path: 'data-cleaning',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'DataCleaning',
+            meta: { title: 'Data cleaning' }
+          },
+          {
+            path: 'file-store',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'FileStore',
+            meta: { title: 'File store' }
+          },
+          {
+            path: 'search',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Search',
+            meta: { title: 'Search' }
+          }
+        ]
+      },
+      {
+        path: 'configuration-center',
+        name: 'ConfigurationCenter',
+        meta: { title: 'Configuration center' },
+        children: [
+          {
+            path: 'parameter-subscription',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Parameter subscription',
+            meta: { title: 'Parameter subscription' }
+          },
+          {
+            path: 'change-monitoring',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ChangeMonitoring',
+            meta: { title: 'Change monitoring' }
+          },
+          {
+            path: 'parameter-loading',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ParameterLoading',
+            meta: { title: 'Parameter loading' }
+          },
+          {
+            path: 'parameter-download',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ParameterDownload',
+            meta: { title: 'Parameter Download' }
+          },
+          {
+            path: 'flexible-notice-receiving',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'FlexibleNoticeReceiving',
+            meta: { title: 'Flexible notice receiving' }
+          },
+          {
+            path: 'parameter-store',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ParameterStore',
+            meta: { title: 'Parameter store' }
+          }
+        ]
+      },
+      {
+        path: 'user-center',
+        name: 'UserCenter',
+        meta: { title: 'User Center' },
+        children: [
+          {
+            path: 'register-login',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'RegisterLogin',
+            meta: { title: 'Register Login' }
+          },
+          {
+            path: 'safety-core',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'SafetyCore',
+            meta: { title: 'Safety Core' }
+          },
+          {
+            path: 'session-management',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'SessionManagement',
+            meta: { title: 'Session Management' }
+          },
+          {
+            path: 'user-information-maintenance',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'UserInformationMaintenance',
+            meta: { title: 'User Information Maintenance' }
+          }
+        ]
+      },
+      {
+        path: 'account-center',
+        name: 'AccountCenter',
+        meta: { title: 'Account center' },
+        children: [
+          {
+            path: 'electronic-account-opening',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ElectronicAccountOpening',
+            meta: { title: 'Electronic account opening' }
+          },
+          {
+            path: 'add-account',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'AddAccount',
+            meta: { title: 'Add Account' }
+          },
+          {
+            path: 'binding-card',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'BindingCard',
+            meta: { title: 'Binding Card' }
+          },
+          {
+            path: 'user-information-maintenance',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'UserInformationMaintenance',
+            meta: { title: 'User Information Maintenance' }
+          }
+        ]
+      },
+      {
+        path: 'account-center',
+        name: 'AccountCenter',
+        meta: { title: 'Account center' },
+        children: [
+          {
+            path: 'electronic-account-opening',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ElectronicAccountOpening',
+            meta: { title: 'Electronic account opening' }
+          },
+          {
+            path: 'add-account',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'AddAccount',
+            meta: { title: 'Add Account' }
+          },
+          {
+            path: 'binding-card',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'BindingCard',
+            meta: { title: 'Binding Card' }
+          },
+          {
+            path: 'user-information-maintenance',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'UserInformationMaintenance',
+            meta: { title: 'User Information Maintenance' }
+          }
+        ]
+      },
+      {
+        path: 'product-center',
+        name: 'ProductCenter',
+        meta: { title: 'Product Center' },
+        children: [
+          {
+            path: 'product-template',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ProductTemplate',
+            meta: { title: 'Product template' }
+          },
+          {
+            path: 'product-category',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ProductCategory',
+            meta: { title: 'Product category' }
+          },
+          {
+            path: 'product-configuration',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ProductConfiguration',
+            meta: { title: 'Product configuration' }
+          },
+          {
+            path: 'on-off-shelf',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'OnOffShelf',
+            meta: { title: 'On Off Shelf' }
+          }
+        ]
+      },
+      {
+        path: 'equity-center',
+        name: 'EquityCenter',
+        meta: { title: 'Equity Center' },
+        children: [
+          {
+            path: 'equity-issue',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'EquityIssue',
+            meta: { title: 'Equity Issue' }
+          },
+          {
+            path: 'equity-consumption',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'EquityConsumption',
+            meta: { title: 'Equity Consumption' }
+          },
+          {
+            path: 'issuance-rules',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'IssuanceRules',
+            meta: { title: 'Issuance Rules' }
+          },
+          {
+            path: 'equity-cancellation',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'EquityCancellation',
+            meta: { title: 'Equity Cancellation' }
+          },
+          {
+            path: 'integral',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Integral',
+            meta: { title: 'Integral' }
+          },
+          {
+            path: 'coupon',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'Coupon',
+            meta: { title: 'Coupon' }
+          }
+        ]
+      },
+      {
+        path: 'foundation-center',
+        name: 'FoundationCenter',
+        meta: { title: 'Foundation Center' },
+        children: [
+          {
+            path: 'protocol-data',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'ProtocolData',
+            meta: { title: 'Protocol Data' }
+          },
+          {
+            path: 'business-data',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'BusinessData',
+            meta: { title: 'Business Data' }
+          },
+          {
+            path: 'system-parameter',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'SystemParameter',
+            meta: { title: 'System Parameter' }
+          },
+          {
+            path: 'public-data',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'PublicData',
+            meta: { title: 'Public Data' }
+          },
+          {
+            path: 'data-synchronization',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'DataSynchronization',
+            meta: { title: 'Data Synchronization' }
+          },
+          {
+            path: 'data-push',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'DataPush',
+            meta: { title: 'Data Push' }
+          }
+        ]
+      },
+      {
+        path: 'sequence-center',
+        name: 'SequenceCenter',
+        meta: { title: 'Sequence Center' },
+        children: [
+          {
+            path: 'message-serial-number',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'MessageSerialNumber',
+            meta: { title: 'Message serial number' }
+          },
+          {
+            path: 'database-primary-key',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'DatabasePrimaryKey',
+            meta: { title: 'Database Primary Key' }
+          },
+          {
+            path: 'order-serial-number',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'OrderSerialNumber',
+            meta: { title: 'Order Serial Number' }
+          },
+          {
+            path: 'business-id',
+            component: () => import('@/views/nested/menu1/menu1-1'),
+            name: 'BusinessID',
+            meta: { title: 'Business ID' }
+          }
+        ]
+      }
     ]
   },
 
