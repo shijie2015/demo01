@@ -55,47 +55,18 @@ export const constantRoutes = [
     }]
   },
 
-  // {
-  //   path: '/example',
-  //   component: Layout,
-  //   redirect: '/example/table',
-  //   name: 'Example',
-  //   meta: { title: 'Example', icon: 'example' },
-  //   children: [
-  //     {
-  //       path: 'table',
-  //       name: 'Table',
-  //       component: () => import('@/views/table/index'),
-  //       meta: { title: 'Table', icon: 'table' }
-  //     },
-  //     {
-  //       path: 'tree',
-  //       name: 'Tree',
-  //       component: () => import('@/views/tree/index'),
-  //       meta: { title: 'Tree', icon: 'tree' }
-  //     }
-  //   ]
-  // },
-
-  {
-    path: '/form',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
-      }
-    ]
-  },
-
   {
     path: '/middle-end',
     component: Layout,
+    redirect: '/middle-end/index',
     name:'MiddleEnd',
     meta: { title: 'Middle End', icon: 'all' },
     children: [
+      {
+        path: 'index',
+        name: 'MiddleEnd',
+        component: () => import('@/views/middleEnd/index'),
+      },
       {
         path: 'trade-center',
         component: () => import('@/views/middleEnd/tradeCenter'),
@@ -162,31 +133,31 @@ export const constantRoutes = [
       },
       {
         path: 'marketing-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/marketingCenter'),
         name: 'MarketingCenter',
         meta: { title: 'Marketing Center' },
         children: [
           {
             path: 'luck-draw',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/marketingCenter/luckDraw'),
             name: 'LuckDraw',
             meta: { title: 'Luck Draw' }
           },
           {
             path: 'seckill',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/marketingCenter/seckill'),
             name: 'Seckill',
             meta: { title: 'Seckill' }
           },
           {
             path: 'preferential',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/marketingCenter/preferential'),
             name: 'Preferential',
             meta: { title: 'Preferential' }
           },
           {
             path: 'off',
-            component: () => import('@/views/nested/menu1/menu1-1'),
+            component: () => import('@/views/middleEnd/marketingCenter/off'),
             name: 'Off',
             meta: { title: 'Off' }
           }
@@ -194,37 +165,37 @@ export const constantRoutes = [
       },
       {
         path: 'clearing-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/clearingCenter'),
         name: 'ClearingCenter',
         meta: { title: 'Clearing Center' },
         children: [
           {
             path: 'reconciliation',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/clearingCenter/reconciliation'),
             name: 'Reconciliation',
             meta: { title: 'Reconciliation' }
           },
           {
             path: 'liquidation',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/clearingCenter/liquidation'),
             name: 'Liquidation',
             meta: { title: 'Liquidation' }
           },
           {
             path: 'preferential',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/clearingCenter/preferential'),
             name: 'Preferential',
             meta: { title: 'Preferential' }
           },
           {
             path: 'file-download',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/clearingCenter/fileDownload'),
             name: 'FileDownload',
             meta: { title: 'File Download' }
           },
           {
             path: 'result-download',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/clearingCenter/resultDownload'),
             name: 'ResultDownload',
             meta: { title: 'Result Download' }
           }
@@ -232,31 +203,31 @@ export const constantRoutes = [
       },
       {
         path: 'log-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/logCenter'),
         name: 'LogCenter',
         meta: { title: 'Log Center' },
         children: [
           {
             path: 'file-collection',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/logCenter/fileCollection'),
             name: 'FileCollection',
             meta: { title: 'File Collection' }
           },
           {
             path: 'data-cleaning',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/logCenter/dataCleaning'),
             name: 'DataCleaning',
             meta: { title: 'Data Cleaning' }
           },
           {
             path: 'file-store',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/logCenter/fileStore'),
             name: 'FileStore',
             meta: { title: 'File Store' }
           },
           {
             path: 'search',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/logCenter/search'),
             name: 'Search',
             meta: { title: 'Search' }
           }
@@ -264,43 +235,43 @@ export const constantRoutes = [
       },
       {
         path: 'configuration-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/configurationCenter'),
         name: 'ConfigurationCenter',
         meta: { title: 'Configuration Center' },
         children: [
           {
             path: 'parameter-subscription',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/configurationCenter/parameterSubscription'),
             name: 'ParameterSubscription',
             meta: { title: 'Parameter Subscription' }
           },
           {
             path: 'change-monitoring',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/configurationCenter/changeMonitoring'),
             name: 'ChangeMonitoring',
             meta: { title: 'Change Monitoring' }
           },
           {
             path: 'parameter-loading',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/configurationCenter/parameterLoading'),
             name: 'ParameterLoading',
             meta: { title: 'Parameter Loading' }
           },
           {
             path: 'parameter-download',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/configurationCenter/parameterDownload'),
             name: 'ParameterDownload',
             meta: { title: 'Parameter Download' }
           },
           {
             path: 'flexible-notice-receiving',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/configurationCenter/flexibleNoticeReceiving'),
             name: 'FlexibleNoticeReceiving',
             meta: { title: 'Flexible Notice Receiving' }
           },
           {
             path: 'parameter-store',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/configurationCenter/parameterStore'),
             name: 'ParameterStore',
             meta: { title: 'Parameter Store' }
           }
@@ -308,31 +279,31 @@ export const constantRoutes = [
       },
       {
         path: 'user-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/userCenter'),
         name: 'UserCenter',
         meta: { title: 'User Center' },
         children: [
           {
             path: 'register-login',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/userCenter/registerLogin'),
             name: 'RegisterLogin',
             meta: { title: 'Register Login' }
           },
           {
             path: 'safety-core',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/userCenter/safetyCore'),
             name: 'SafetyCore',
             meta: { title: 'Safety Core' }
           },
           {
             path: 'session-management',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/userCenter/sessionManagement'),
             name: 'SessionManagement',
             meta: { title: 'Session Management' }
           },
           {
             path: 'user-information-maintenance',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/userCenter/userInformationMaintenance'),
             name: 'UserInformationMaintenance',
             meta: { title: 'User Information Maintenance' }
           }
@@ -340,31 +311,31 @@ export const constantRoutes = [
       },
       {
         path: 'account-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/accountCenter'),
         name: 'AccountCenter',
         meta: { title: 'Account Center' },
         children: [
           {
             path: 'electronic-account-opening',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/accountCenter/electronicAccountOpening'),
             name: 'ElectronicAccountOpening',
             meta: { title: 'Electronic Account Opening' }
           },
           {
             path: 'add-account',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/accountCenter/addAccount'),
             name: 'AddAccount',
             meta: { title: 'Add Account' }
           },
           {
             path: 'binding-card',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/accountCenter/bindingCard'),
             name: 'BindingCard',
             meta: { title: 'Binding Card' }
           },
           {
             path: 'user-information-maintenance',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/accountCenter/userInformationMaintenance'),
             name: 'UserInformationMaintenance',
             meta: { title: 'User Information Maintenance' }
           }
@@ -372,31 +343,31 @@ export const constantRoutes = [
       },
       {
         path: 'product-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/productCenter'),
         name: 'ProductCenter',
         meta: { title: 'Product Center' },
         children: [
           {
             path: 'product-template',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/productCenter/productTemplate'),
             name: 'ProductTemplate',
             meta: { title: 'Product Template' }
           },
           {
             path: 'product-category',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/productCenter/productCategory'),
             name: 'ProductCategory',
             meta: { title: 'Product Category' }
           },
           {
             path: 'product-configuration',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/productCenter/productConfiguration'),
             name: 'ProductConfiguration',
             meta: { title: 'Product Configuration' }
           },
           {
             path: 'on-off-shelf',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/productCenter/onOffShelf'),
             name: 'OnOffShelf',
             meta: { title: 'On Off Shelf' }
           }
@@ -404,43 +375,43 @@ export const constantRoutes = [
       },
       {
         path: 'equity-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/equityCenter'),
         name: 'EquityCenter',
         meta: { title: 'Equity Center' },
         children: [
           {
             path: 'equity-issue',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/equityCenter/equityIssue'),
             name: 'EquityIssue',
             meta: { title: 'Equity Issue' }
           },
           {
             path: 'equity-consumption',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/equityCenter/equityConsumption'),
             name: 'EquityConsumption',
             meta: { title: 'Equity Consumption' }
           },
           {
             path: 'issuance-rules',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/equityCenter/issuanceRules'),
             name: 'IssuanceRules',
             meta: { title: 'Issuance Rules' }
           },
           {
             path: 'equity-cancellation',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/equityCenter/equityCancellation'),
             name: 'EquityCancellation',
             meta: { title: 'Equity Cancellation' }
           },
           {
             path: 'integral',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/equityCenter/integral'),
             name: 'Integral',
             meta: { title: 'Integral' }
           },
           {
             path: 'coupon',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/equityCenter/coupon'),
             name: 'Coupon',
             meta: { title: 'Coupon' }
           }
@@ -448,43 +419,43 @@ export const constantRoutes = [
       },
       {
         path: 'foundation-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/foundationCenter'),
         name: 'FoundationCenter',
         meta: { title: 'Foundation Center' },
         children: [
           {
             path: 'protocol-data',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/foundationCenter/protocolData'),
             name: 'ProtocolData',
             meta: { title: 'Protocol Data' }
           },
           {
             path: 'business-data',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/foundationCenter/businessData'),
             name: 'BusinessData',
             meta: { title: 'Business Data' }
           },
           {
             path: 'system-parameter',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/foundationCenter/systemParameter'),
             name: 'SystemParameter',
             meta: { title: 'System Parameter' }
           },
           {
             path: 'public-data',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/foundationCenter/publicData'),
             name: 'PublicData',
             meta: { title: 'Public Data' }
           },
           {
             path: 'data-synchronization',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/foundationCenter/dataSynchronization'),
             name: 'DataSynchronization',
             meta: { title: 'Data Synchronization' }
           },
           {
             path: 'data-push',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/foundationCenter/dataPush'),
             name: 'DataPush',
             meta: { title: 'Data Push' }
           }
@@ -492,31 +463,31 @@ export const constantRoutes = [
       },
       {
         path: 'sequence-center',
-        component: () => import('@/views/middleEnd'),
+        component: () => import('@/views/middleEnd/sequenceCenter'),
         name: 'SequenceCenter',
         meta: { title: 'Sequence Center' },
         children: [
           {
             path: 'message-serial-number',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/sequenceCenter/messageSerialNumber'),
             name: 'MessageSerialNumber',
             meta: { title: 'Message Serial Number' }
           },
           {
             path: 'database-primary-key',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/sequenceCenter/databasePrimaryKey'),
             name: 'DatabasePrimaryKey',
             meta: { title: 'Database Primary Key' }
           },
           {
             path: 'order-serial-number',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/sequenceCenter/orderSerialNumber'),
             name: 'OrderSerialNumber',
             meta: { title: 'Order Serial Number' }
           },
           {
             path: 'business-id',
-            component: () => import('@/views/middleEnd/tradeCenter/depositTransaction'),
+            component: () => import('@/views/middleEnd/sequenceCenter/businessID'),
             name: 'BusinessID',
             meta: { title: 'Business ID' }
           }
