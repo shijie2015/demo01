@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="middle-end-container">
     <el-row>
       <el-col>
         <router-link to="trade-center">
@@ -53,14 +53,16 @@ export default {};
 
 <style scoped>
 .el-button {
-  background-color: #409eff;
+  background-color: #f19443;
+  border-color: #f19443;
   border-radius: 10px;
   color: #ffffff;
   padding: 40px;
   margin: 20px;
 }
 .el-button:hover {
-  background-color: rgb(151, 202, 253);
+  background-color: #ff9d47;
+  border-color: #ff9d47;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
   transform: scale(1.015);
@@ -68,7 +70,8 @@ export default {};
   transition-timing-function: ease-in-out;
 }
 .el-button:active {
-  background-color: rgb(38, 147, 255);
+  background-color: #c27736;
+  border-color: #c27736;
   color: #ffffff;
 }
 .el-col {
@@ -76,7 +79,8 @@ export default {};
   justify-content: center;
   padding: 20px;
 }
-/* #el-first-column {
-  padding: 40px 20px 20px 20px;
-} */
+.middle-end-container {
+  background-color: rgb(240, 242, 245);
+  height: 800px;
+}
 </style>
