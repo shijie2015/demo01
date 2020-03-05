@@ -9,6 +9,7 @@
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
+      <search id="header-search" class="right-menu-item" />
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar" />
@@ -34,11 +35,13 @@
 import { mapGetters } from "vuex";
 import Breadcrumb from "@/components/Breadcrumb";
 import Hamburger from "@/components/Hamburger";
+import Search from '@/components/HeaderSearch';
 
 export default {
   components: {
     Breadcrumb,
-    Hamburger
+    Hamburger,
+    Search
   },
   computed: {
     ...mapGetters(["sidebar", "avatar"])
@@ -133,8 +136,8 @@ export default {
   }
 }
 .el-dropdown-menu__item:focus,
-  .el-dropdown-menu__item:hover {
-    background-color: #fff5ed;
-    color: #ffad66;
-  }
+.el-dropdown-menu__item:hover {
+  background-color: #fff5ed;
+  color: #ffad66;
+}
 </style>

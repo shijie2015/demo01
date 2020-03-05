@@ -1,5 +1,8 @@
 <template>
   <div class="middle-end-container">
+    <div>
+      <nav></nav>
+    </div>
     <el-row>
       <el-col>
         <router-link to="trade-center">
@@ -82,5 +85,12 @@ export default {};
 .middle-end-container {
   background-color: rgb(240, 242, 245);
   height: 800px;
+}
+</style>
+
+<style lang="scss" scoped>
+nav {
+  height: 50px;
+  // border: 1px solid #f19443;
 }
 </style>
