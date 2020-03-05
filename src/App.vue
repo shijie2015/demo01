@@ -6,6 +6,12 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
+
+<style>
+#nprogress .bar {
+  background: #f19443 !important;
+}
+</style>
