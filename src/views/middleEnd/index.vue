@@ -1,8 +1,6 @@
 <template>
   <div class="middle-end-container">
-    <div>
-      <nav></nav>
-    </div>
+    <div class="first-line-blank"></div>
     <el-row>
       <el-col>
         <router-link to="trade-center">
@@ -61,7 +59,7 @@ export default {};
   border-radius: 10px;
   color: #ffffff;
   padding: 40px;
-  margin: 20px;
+  margin: 40px;
 }
 .el-button:hover {
   background-color: #ff9d47;
@@ -80,7 +78,7 @@ export default {};
 .el-col {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
 }
 .middle-end-container {
   background-color: rgb(240, 242, 245);
@@ -89,8 +87,8 @@ export default {};
 </style>
 
 <style lang="scss" scoped>
-nav {
-  height: 50px;
+.first-line-blank {
+  height: 40px;
   // border: 1px solid #f19443;
 }
 </style>

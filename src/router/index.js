@@ -55,11 +55,23 @@ export const constantRoutes = [
     }]
   },
 
+  // {
+  //   path: '/',
+  //   component: Layout,
+  //   redirect: '/middle-end/index',
+  //   children: [{
+  //     path: '/middle-end/index',
+  //     name: 'MiddleEnd',
+  //     component: () => import('@/views/middleEnd/index'),
+  //     meta: { title: 'Middle End', icon: 'all' }
+  //   }]
+  // },
+
   {
     path: '/middle-end',
     component: Layout,
     redirect: '/middle-end/index',
-    name:'MiddleEnd',
+    name: 'MiddleEnd',
     meta: { title: 'Middle End', icon: 'all' },
     children: [
       {
