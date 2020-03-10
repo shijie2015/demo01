@@ -43,36 +43,52 @@ export const constantRoutes = [
     hidden: true
   },
 
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/dashboard',
-    children: [{
-      path: 'dashboard',
-      name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
-    }]
-  },
-
   // {
   //   path: '/',
   //   component: Layout,
-  //   redirect: '/middle-end/index',
-  //   children: [{
-  //     path: '/middle-end/index',
-  //     name: 'MiddleEnd',
-  //     component: () => import('@/views/middleEnd/index'),
-  //     meta: { title: 'Middle End', icon: 'all' }
-  //   }]
+  //   redirect: '/middle-end',
+  //   children: [
+  //     {
+  //       path: 'middle-end',
+  //       name: 'MiddleEnd',
+  //       component: () => import('@/views/middleEnd/index'),
+  //       meta: { title: 'Middle End', icon: 'all' }
+  //     },
+  //   ]
   // },
+
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      {
+        path: 'middle-end',
+        name: 'home',
+        component: () => import('@/views/middleEnd/index'),
+        meta: { title: 'Home', icon: 'all' }
+      },
+    ]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      {
+        path: 'startup',
+        name: 'StartUp',
+        component: () => import('@/views/startUp/index'),
+        meta: { title: 'Start Up', icon: 'example' }
+      },
+    ]
+  },
+  
 
   {
     path: '/middle-end',
     component: Layout,
-    redirect: '/middle-end/index',
     name: 'MiddleEnd',
-    meta: { title: 'Middle End', icon: 'all' },
+    meta: { title: 'Middle End', icon: 'component' },
     children: [
       {
         path: 'index',
@@ -504,7 +520,20 @@ export const constantRoutes = [
             meta: { title: 'Business ID' }
           }
         ]
-      }
+      },
+    ]
+  },
+
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      {
+        path: 'faq',
+        name: 'FAQ',
+        component: () => import('@/views/startUp/index'),
+        meta: { title: 'FAQ', icon: 'guide' }
+      },
     ]
   },
 

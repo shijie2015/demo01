@@ -16,11 +16,8 @@
           <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
-          <router-link to="/">
-            <el-dropdown-item>Home</el-dropdown-item>
-          </router-link>
           <router-link to="/middle-end">
-            <el-dropdown-item>Middle End</el-dropdown-item>
+            <el-dropdown-item>Home</el-dropdown-item>
           </router-link>
           <a target="_blank" href="https://github.com/shijie2015/demo01">
             <el-dropdown-item>Github</el-dropdown-item>

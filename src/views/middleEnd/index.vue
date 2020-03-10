@@ -3,44 +3,44 @@
     <div class="first-line-blank"></div>
     <el-row>
       <el-col>
-        <router-link to="trade-center">
+        <router-link to="middle-end/trade-center" class="middle-end-button">
           <el-button icon="el-icon-edit">交易中心</el-button>
         </router-link>
-        <router-link to="payment-center">
+        <router-link to="middle-end/payment-center" class="middle-end-button">
           <el-button icon="el-icon-goods">支付中心</el-button>
         </router-link>
-        <router-link to="marketing-center">
+        <router-link to="middle-end/marketing-center" class="middle-end-button">
           <el-button icon="el-icon-phone-outline">营销中心</el-button>
         </router-link>
-        <router-link to="clearing-center">
+        <router-link to="middle-end/clearing-center" class="middle-end-button">
           <el-button icon="el-icon-document-checked">清算中心</el-button>
         </router-link>
       </el-col>
       <el-col>
-        <router-link to="log-center">
+        <router-link to="middle-end/log-center" class="middle-end-button">
           <el-button icon="el-icon-document">日志中心</el-button>
         </router-link>
-        <router-link to="configuration-center">
+        <router-link to="middle-end/configuration-center" class="middle-end-button">
           <el-button icon="el-icon-setting">配置中心</el-button>
         </router-link>
-        <router-link to="user-center">
+        <router-link to="middle-end/user-center" class="middle-end-button">
           <el-button icon="el-icon-user">用户中心</el-button>
         </router-link>
-        <router-link to="account-center">
+        <router-link to="middle-end/account-center" class="middle-end-button">
           <el-button icon="el-icon-bank-card">账户中心</el-button>
         </router-link>
       </el-col>
       <el-col>
-        <router-link to="product-center">
+        <router-link to="middle-end/product-center" class="middle-end-button">
           <el-button icon="el-icon-cold-drink">产品中心</el-button>
         </router-link>
-        <router-link to="equity-center">
+        <router-link to="middle-end/equity-center" class="middle-end-button">
           <el-button icon="el-icon-chat-square">权益中心</el-button>
         </router-link>
-        <router-link to="foundation-center">
+        <router-link to="middle-end/foundation-center" class="middle-end-button">
           <el-button icon="el-icon-house">基础中心</el-button>
         </router-link>
-        <router-link to="sequence-center">
+        <router-link to="middle-end/sequence-center" class="middle-end-button">
           <el-button icon="el-icon-files">序列中心</el-button>
         </router-link>
       </el-col>
@@ -56,10 +56,9 @@ export default {};
 .el-button {
   background-color: #f19443;
   border-color: #f19443;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #ffffff;
-  padding: 40px;
-  margin: 40px;
+  padding: 50px 40px;
 }
 .el-button:hover {
   background-color: #ff9d47;
@@ -80,6 +79,9 @@ export default {};
   justify-content: center;
   padding: 0px;
 }
+.middle-end-button {
+  margin: 40px;
+}
 .middle-end-container {
   background-color: rgb(240, 242, 245);
   height: 800px;
@@ -89,6 +91,5 @@ export default {};
 <style lang="scss" scoped>
 .first-line-blank {
   height: 40px;
-  // border: 1px solid #f19443;
 }
 </style>
