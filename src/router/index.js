@@ -43,20 +43,6 @@ export const constantRoutes = [
     hidden: true
   },
 
-  // {
-  //   path: '/',
-  //   component: Layout,
-  //   redirect: '/middle-end',
-  //   children: [
-  //     {
-  //       path: 'middle-end',
-  //       name: 'MiddleEnd',
-  //       component: () => import('@/views/middleEnd/index'),
-  //       meta: { title: 'Middle End', icon: 'all' }
-  //     },
-  //   ]
-  // },
-
   {
     path: '/',
     component: Layout,
@@ -82,8 +68,20 @@ export const constantRoutes = [
       },
     ]
   },
-  
 
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      {
+        path: 'table',
+        name: 'Table',
+        component: () => import('@/views/table/index'),
+        meta: { title: 'Table', icon: 'table' }
+      },
+    ]
+  },
+  
   {
     path: '/middle-end',
     component: Layout,

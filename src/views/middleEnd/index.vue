@@ -45,6 +45,8 @@
         </router-link>
       </el-col>
     </el-row>
+    <div class="middle-end-footer">
+    </div>
   </div>
 </template>
 
@@ -80,11 +82,18 @@ export default {};
   padding: 0px;
 }
 .middle-end-button {
-  margin: 40px;
+  margin: 35px 40px;
 }
 .middle-end-container {
   background-color: rgb(240, 242, 245);
-  height: 800px;
+}
+.middle-end-footer {
+  border-top: 1px solid #eaecef;
+  color: #586069;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 </style>
 

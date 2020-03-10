@@ -7,6 +7,12 @@
       scrolling="0"
       frameborder="0"
     ></iframe>
+    <div class="equity-center-footer">
+      <ul class="footer-list">
+        <li>权益中心联系人</li>
+        <li>刘盛杰</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -15,4 +21,17 @@ export default {};
 </script>
 
 <style scoped>
+.equity-center-footer {
+  border-top: 1px solid #eaecef;
+  color: #586069;
+  font-size: 12px;
+  /* margin-top: 40px; */
+}
+.footer-list {
+  display: flex;
+  list-style: none;
+}
+.footer-list li {
+  margin-right: 16px;
+}
 </style>
